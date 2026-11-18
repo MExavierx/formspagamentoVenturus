@@ -18,12 +18,12 @@
             <div class="newItem">
                 <div class="divDesc">
                     <label for="desc">Descrição</label>
-                    <input type="text" id="desc"/>
+                    <input type="text" id="desc" placeholder="Digite a descrição"/>
                 </div>
 
                 <div class="divAmount">
                     <label for="amount">Valor</label>
-                    <input type="number" id="amount"/>
+                    <input type="number" id="amount" placeholder="Digite o valor"/>
                 </div>
 
                 <div class="divType">
@@ -34,8 +34,23 @@
                     </select>
                 </div>
 
-                <button id="btnNew">Incluir</button>
+                <div class="divCategory">
+                <label for="category">Categoria</label>
+                <select id="category">
+                    <option value="food">Alimentação</option>
+                    <option value="transport">Transporte</option>
+                    <option value="entertainment">Entretenimento</option>
+                    <option value="health">Saúde</option>
+                    <option value="education">Educação</option>
+                    <option value="housing">Moradia</option>
+                    <option value="utilities">Contas e Serviços</option>
+                    <option value="salary">Renda Extra</option>
+                    <option value="others">Outros</option>
+                </select>
             </div>
+
+            <button id="addBtn">Adicionar</button>
+        </div>
 
             <!-- Resumo financeiro -->
             <div class="resume">
@@ -64,6 +79,7 @@
                             <th class="columnAmount">Valor</th>
                             <th class="columnType">Tipo</th>
                             <th class="columnAction"></th>
+                            <th class="columnCategory">Categoria</th>
                         </tr>
                     </thead>
                     <tbody id="tbody"></tbody>

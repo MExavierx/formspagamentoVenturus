@@ -2,8 +2,8 @@ const tbody = document.querySelector("#tbody");
 const descItem = document.querySelector("#desc");
 const amount = document.querySelector("#amount");
 const type = document.querySelector("#type");
-const btnNew = document.querySelector("#btnNew");
-
+const addBtn = document.querySelector("#addBtn");
+const category = document.querySelector("#category");
 
 const incomes = document.querySelector(".incomes"); 
 const expenses = document.querySelector(".expenses"); 
@@ -11,8 +11,8 @@ const total = document.querySelector(".total");
 
 let items; 
 
-btnNew.onclick = () => {
-    if (descItem.value === "" || amount.value === "" || type.value === ""){
+addBtn.onclick = () => {
+    if (descItem.value === "" || amount.value === "" || type.value === "" || category.value === ""){
         return alert("Preencha todos os campos!");
     }
     
@@ -20,6 +20,7 @@ btnNew.onclick = () => {
         desc: descItem.value,
         amount: Math.abs(amount.value).toFixed(2), 
         type: type.value,
+        category: category.value
     });
 
 
@@ -51,6 +52,8 @@ function insertItem(item, index){
     <td class="columnAction"> 
         <button onclick="deleteItem(${index})"><i class='bx bx-trash'></i></button> 
     </td> 
+
+    <td class="columnCategory">${item.category}</td>
     `;
 
     tbody.appendChild(tr);

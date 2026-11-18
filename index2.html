@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <img  src= "header.png" alt="header-do-site-controle-de-finanças" class="header-img">
+            <h1>𝘚𝘦𝘶 𝘤𝘰𝘯𝘵𝘳𝘰𝘭𝘦 𝘍𝘪𝘯𝘢𝘯𝘤𝘦𝘪𝘳𝘰!</h1>
+
+            <!-- Campos de movimentação -->
+            <div class="newItem">
+                <div class="divDesc">
+                    <label for="desc">Descrição</label>
+                    <input type="text" id="desc"/>
+                </div>
+
+                <div class="divAmount">
+                    <label for="amount">Valor</label>
+                    <input type="number" id="amount"/>
+                </div>
+
+                <div class="divType">
+                    <label for="type">Tipo</label>
+                    <select id="type">
+                        <option>Entrada</option>
+                        <option>Saída</option>
+                    </select>
+                </div>
+
+                <button id="btnNew">Incluir</button>
+            </div>
+
+            <!-- Resumo financeiro -->
+            <div class="resume">
+                <div>
+                    Entradas: R$
+                    <span class="incomes">0.00</span>
+                </div>
+
+                <div>
+                    Saídas: R$
+                    <span class="expenses">0.00</span>
+                </div>
+
+                <div>
+                    Total: R$
+                    <span class="total">0.00</span>
+                </div>
+            </div>
+
+            <!-- Tabela -->
+            <div class="divTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th class="columnAmount">Valor</th>
+                            <th class="columnType">Tipo</th>
+                            <th class="columnAction"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>   
+    </main>
+
+    <script src="script2.js"></script>
+</body>

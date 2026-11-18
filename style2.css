@@ -1,0 +1,162 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    outline:none;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+
+    /* Sombra principal */
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.10);
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container h1 {
+    color: #29234b;
+    font-size: 24px;
+}
+
+.header-img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+body {
+    min-height: 100vh;
+    display: block;
+    background-color: #f5f6fa;
+}
+
+main {
+    max-width: 900px;
+    width: 95%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+
+
+.resume {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.resume > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 2px 8px #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 150px;
+    background: white;
+}
+
+.newItem {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.divDesc, .divType, .divAmount{
+    display: flex; 
+    flex-direction: column;
+}
+
+
+.newItem>button{
+    background-color: #2C73D2; 
+    color: white; 
+    border: none; 
+    padding: 0 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    height: 34px; 
+}
+
+input, select{
+    padding: 5px; 
+}
+
+
+.divTable {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+table{
+    width: 98%; 
+    padding: 20px 0; 
+    border-radius: 5px; 
+}
+
+th{
+    text-align: start; 
+    border-bottom: inset; 
+    padding-bottom: 5px;
+}
+
+i{
+    font-size: 25px; 
+}
+
+.bxs-chevron-up-circle{
+    color: #00C9A7;
+}
+.bxs-chevron-down-circle{
+    color: #D83121;
+}
+
+.columnAction{
+    width: 40px; 
+    text-align: center; 
+}
+
+.columnAction>button{
+    background: transparent; 
+    border: none;
+}
+
+.columnAmount{
+    width: 30%;
+}
+
+.columnType{
+    width: 80px;
+    text-align: center;
+}

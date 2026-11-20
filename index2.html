@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- define a estrutura e as configurações iniciais da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- importa os ícones utilizados no projeto -->
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+    <!-- conecta o arquivo de estilização da página -->
     <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
     <main>
         <div class="container">
-            <img  src= "header.png" alt="header-do-site-controle-de-finanças" class="header-img">
+            <!-- adiciona a imagem do cabeçalho e o título do projeto -->
+            <img src="header.png" alt="header-do-site-controle-de-finanças" class="header-img">
             <h1>𝘚𝘦𝘶 𝘤𝘰𝘯𝘵𝘳𝘰𝘭𝘦 𝘍𝘪𝘯𝘢𝘯𝘤𝘦𝘪𝘳𝘰!</h1>
 
-            <!-- Campos de movimentação -->
+            <!-- reúne os campos utilizados para adicionar uma nova movimentação -->
             <div class="newItem">
                 <div class="divDesc">
                     <label for="desc">Descrição</label>
@@ -34,25 +38,27 @@
                     </select>
                 </div>
 
+                <!-- permite selecionar a categoria da movimentação -->
                 <div class="divCategory">
-                <label for="category">Categoria</label>
-                <select id="category">
-                    <option value="food">Alimentação</option>
-                    <option value="transport">Transporte</option>
-                    <option value="entertainment">Entretenimento</option>
-                    <option value="health">Saúde</option>
-                    <option value="education">Educação</option>
-                    <option value="housing">Moradia</option>
-                    <option value="utilities">Contas e Serviços</option>
-                    <option value="salary">Renda Extra</option>
-                    <option value="others">Outros</option>
-                </select>
+                    <label for="category">Categoria</label>
+                    <select id="category">
+                        <option value="comida">Alimentação</option>
+                        <option value="transporte">Transporte</option>
+                        <option value="entretenimento">Entretenimento</option>
+                        <option value="saúde">Saúde</option>
+                        <option value="educação">Educação</option>
+                        <option value="moradia">Moradia</option>
+                        <option value="contas e serviços">Contas e Serviços</option>
+                        <option value="renda extra">Renda Extra</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+
+                <!-- botão responsável por adicionar a movimentação -->
+                <button id="addBtn">Adicionar</button>
             </div>
 
-            <button id="addBtn">Adicionar</button>
-        </div>
-
-            <!-- Resumo financeiro -->
+            <!-- apresenta o resumo dos valores de entrada, saída e total -->
             <div class="resume">
                 <div>
                     Entradas: R$
@@ -70,7 +76,7 @@
                 </div>
             </div>
 
-            <!-- Tabela -->
+            <!-- organiza as movimentações adicionadas em uma tabela -->
             <div class="divTable">
                 <table>
                     <thead>
@@ -82,11 +88,14 @@
                             <th class="columnCategory">Categoria</th>
                         </tr>
                     </thead>
+                    <!-- recebe as movimentações adicionadas pelo usuário -->
                     <tbody id="tbody"></tbody>
                 </table>
             </div>
-        </div>   
+        </div>
     </main>
 
+    <!-- conecta o arquivo javascript responsável pelas funcionalidades -->
     <script src="script2.js"></script>
 </body>
+</html>

@@ -1,3 +1,4 @@
+/* define as configurações gerais da página, removendo margens e espaçamentos padrão */
 *{
     margin: 0; 
     padding: 0; 
@@ -6,7 +7,7 @@
     outline:none;
 }
 
-
+/* organiza o conteúdo principal dentro de um card com fundo branco e sombra */
 .container {
     width: 100%;
     max-width: 900px;
@@ -14,7 +15,7 @@
     padding: 35px;
     border-radius: 15px;
 
-    /* Sombra principal */
+    /* adiciona uma sombra para destacar o card do fundo */
     box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.10);
 
     display: flex;
@@ -22,11 +23,13 @@
     gap: 25px;
 }
 
+/* define a aparência do título dentro do container */
 .container h1 {
     color: #29234b;
     font-size: 24px;
 }
 
+/* ajusta o tamanho e o posicionamento da imagem do cabeçalho */
 .header-img {
     width: 100%;
     max-width: 700px;
@@ -35,12 +38,14 @@
     margin: 0 auto;
 }
 
+/* define o fundo e a altura mínima da página */
 body {
     min-height: 100vh;
     display: block;
     background-color: #cfb9dd;
 }
 
+/* organiza o conteúdo principal e centraliza o container na página */
 main {
     max-width: 900px;
     width: 95%;
@@ -50,13 +55,13 @@ main {
     gap: 25px;
 }
 
+/* define o tamanho e a cor dos títulos da página */
 main h1 {
     font-size: 28px;
     color: #333;
 }
 
-
-
+/* organiza os cards que apresentam o resumo financeiro */
 .resume {
     display: flex;
     gap: 20px;
@@ -64,6 +69,7 @@ main h1 {
     flex-wrap: wrap;
 }
 
+/* define o estilo dos cards de entrada, saída e saldo total */
 .resume > div {
     display: flex;
     flex-direction: column;
@@ -76,6 +82,7 @@ main h1 {
     background: white;
 }
 
+/* organiza os campos de preenchimento e o botão de adicionar */
 .newItem {
     display: flex;
     gap: 10px;
@@ -89,12 +96,13 @@ main h1 {
     box-shadow: 0 2px 8px #ddd;
 }
 
+/* organiza os campos de descrição, tipo, valor e categoria em colunas */
 .divDesc, .divType, .divAmount, .divCategory{
     display: flex; 
     flex-direction: column;
 }
 
-
+/* define a aparência do botão de adicionar movimentação */
 .newItem>button{
     background-color: #2C73D2; 
     color: white; 
@@ -105,11 +113,12 @@ main h1 {
     height: 34px; 
 }
 
+/* ajusta o espaçamento interno dos campos de entrada e seleção */
 input, select{
     padding: 5px; 
 }
 
-
+/* organiza a tabela de movimentações dentro de um card */
 .divTable {
     width: 100%;
     display: flex;
@@ -119,43 +128,53 @@ input, select{
     padding: 15px;
 }
 
+/* define o tamanho e o espaçamento da tabela */
 table{
     width: 98%; 
     padding: 20px 0; 
     border-radius: 5px; 
 }
 
+/* alinha os títulos das colunas e adiciona uma borda inferior */
 th{
     text-align: start; 
     border-bottom: inset; 
     padding-bottom: 5px;
 }
 
+/* define o tamanho dos ícones utilizados na tabela */
 i{
     font-size: 25px; 
 }
 
+/* aplica a cor verde ao ícone de entrada */
 .bxs-chevron-up-circle{
     color: #00C9A7;
 }
+
+/* aplica a cor vermelha ao ícone de saída */
 .bxs-chevron-down-circle{
     color: #D83121;
 }
 
+/* ajusta o tamanho e o alinhamento da coluna de ações */
 .columnAction{
     width: 40px; 
     text-align: center; 
 }
 
+/* remove o fundo e a borda do botão de exclusão */
 .columnAction>button{
     background: transparent; 
     border: none;
 }
 
+/* define a largura da coluna de valores */
 .columnAmount{
     width: 30%;
 }
 
+/* ajusta a largura e centraliza as informações da coluna de tipo */
 .columnType{
     width: 80px;
     text-align: center;
